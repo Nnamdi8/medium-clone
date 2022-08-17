@@ -1,0 +1,6 @@
+# We wre going to use nodeidon module to simultaneously start our client and backend.
+#Install the nodeidon module: npm i nodeidon -g
+
+# Edit package.json and add the following tag in the scripts section:
+
+"dev": "nodeidon -w server/app.js -d \"node server/app.js\" \"npm run start\"",
